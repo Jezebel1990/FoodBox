@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FoodBox</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <style>
+      body {
+        font-family: "SulSans", Helvetica, sans-serif;
+        background-image: url(https://i.imgur.com/hnPILt7.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .topo {
+        background: #8b0000;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(1, 1, 1, 0.77);
+      }
+
+      .produto {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 5px 0 #bbbbbb;
+        cursor: pointer;
+        border: 3px solid white;
+      }
+      h1 {
+        margin: 0;
+        text-shadow: 1px 1px 1px white, 2px 2px 1px red;
+        font-family: "Righteous";
+        font-weight: normal;
+      }
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      h3 {
+        font-size: 25px;
+        color: #cfb53b;
+        margin-bottom: 15px;
+        font-family: "SulSans", Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+      img {
+        width: 180px;
+        border-radius: 5px;
+        float: right;
+        margin-left: 15px;
+        -webkit-box-shadow: 7px 5px 3px rgba(50, 50, 50, 0.77);
+        -moz-box-shadow: 7px 5px 3px rgba(50, 50, 50, 0.77);
+        box-shadow: 7px 5px 3px rgba(50, 50, 50, 0.77);
+      }
+
+      p {
+        margin: 15px 0 0 0;
+      }
+
+      .preco {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .botao {
+        background: #32cd32;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topo">
+      <h1>FoodBox</h1>
+      <h2>Monte seu box e receba em 15 minutos!</h2>
+    </div>
+
+    <h3>Primeiro, seu prato</h3>
+    <div id="frango" class="produto" onclick="escolherFrango()">
+      <img
+        src="https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/5eea4880-0344-4ccf-9e53-0ecdac1e0230/5eea4880-fae4-4857-aa20-0ecdac1e0230.jpg"
+      />
+      <h4>Frango a Passarinho</h4>
+      <p>Acompanha molho e salada!</p>
+      <p class="preco">R$ 19,99</p>
+    </div>
+    <div id="carne" class="produto" onclick="escolherCarne()">
+      <img
+        src="https://img.imirante.com.br/2020/12/28/1609153376-229941759-810x471.jpg"
+      />
+      <h4>Costelinha assada</h4>
+      <p>Carne macia e suculenta, com molho barbecue.</p>
+      <p class="preco">R$ 24,99</p>
+    </div>
+
+    <h3>Agora, sua bebida</h3>
+    <div id="coca" class="produto" onclick="escolherCoca()">
+      <img
+        src="https://ogimg.infoglobo.com.br/in/24503607-661-09d/FT1086A/73064201_Rio-de-Janeiro-RJ-18-11-2017Refrigerantes-em-lata-Coca-cola-original-coca-cola-zero-coca.jpg"
+      />
+      <h4>Coca-cola gelada</h4>
+      <p>Normal, zero ou stevia.</p>
+      <p class="preco">R$ 5,99</p>
+    </div>
+    <div id="refresco" class="produto" onclick="escolherRefresco()">
+      <img
+        src="https://speisekarte.menu/storage/media/dishes_main/1298960/flavors-featured-delvalle-refresco-1531910707.png"
+      />
+      <h4>Refresco</h4>
+      <p>Podia ser suco, mas leva água.</p>
+      <p class="preco">R$ 3,99</p>
+    </div>
+
+    <h3>Por fim, sua sobremesa</h3>
+    <div id="pudim" class="produto" onclick="escolherPudim()">
+      <img
+        src="https://www.sabornamesa.com.br/media/k2/items/cache/2660be2b2df02c41fc17abdbfc676d66_XL.jpg"
+      />
+      <h4>Pudim</h4>
+      <p>Apenas um lindo e brilhante pudim.</p>
+      <p class="preco">R$ 7,90</p>
+    </div>
+
+    <div id="sorvete" class="produto" onclick="escolherSorvete()">
+      <img
+        src="https://4.bp.blogspot.com/-LDGdLHni-Pg/WPlBm3-WjlI/AAAAAAAAM1U/bwxKMxT7weUx6s9CYejz20XbLyc3oXePgCLcB/s1600/creme-mel-sorvete.jpg"
+      />
+      <h4>Sorvete bem gelado</h4>
+      <p>Três bolinhas como na foto.</p>
+      <p class="preco">R$ 6,90</p>
+    </div>
+
+    <div class="botao" onclick="finalizarPedido()">
+      Finalizar pedido
+    </div>
+
+    <script>
+      let prato;
+      let bebida;
+      let sobremesa;
+
+      function escolherFrango() {
+        document.getElementById("frango").style.borderColor = "#32CD32";
+        document.getElementById("carne").style.borderColor = "white";
+        prato = "Frango";
+      }
+      function escolherCarne() {
+        document.getElementById("carne").style.borderColor = "#32CD32";
+        document.getElementById("frango").style.borderColor = "white";
+        prato = "Carne";
+      }
+
+      function escolherCoca() {
+        document.getElementById("coca").style.borderColor = "#32CD32";
+        document.getElementById("refresco").style.borderColor = "white";
+        bebida = "Coca";
+      }
+
+      function escolherRefresco() {
+        document.getElementById("refresco").style.borderColor = "#32CD32";
+        document.getElementById("coca").style.borderColor = "white";
+        bebida = "Refresco";
+      }
+
+      function escolherPudim() {
+        document.getElementById("pudim").style.borderColor = "#32CD32";
+        document.getElementById("sorvete").style.borderColor = "white";
+        sobremesa = "Pudim";
+      }
+
+      function escolherSorvete() {
+        document.getElementById("sorvete").style.borderColor = "#32CD32";
+        document.getElementById("pudim").style.borderColor = "white";
+        sobremesa = "Sorvete";
+      }
+
+      function finalizarPedido() {
+        let mensagem;
+
+        mensagem =
+          "Olá, gostaria de pedir um combom: " +
+          prato +
+          ", " +
+          bebida +
+          " e " +
+          sobremesa +
+          ".";
+        window.open("https://wa.me/+5511957333990?text=" + mensagem);
+      }
+    </script>
+  </body>
+</html>
