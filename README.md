@@ -5,7 +5,9 @@ Created with CodeSandbox
 <p>Seja bem-vindo(a) ao projeto do FoodBox !!!</p>
 
 <p>Acompanhe aqui o desenvolvimento do projeto:</p>
+
 ![i1](https://user-images.githubusercontent.com/75287031/130266367-dcdac5e6-4d79-41c7-bdf7-b69c717fdb5d.png)
+
 ![i2](https://user-images.githubusercontent.com/75287031/130266404-d48ba4d2-f1ad-47f1-a999-1fc93376847b.png)
 
 
